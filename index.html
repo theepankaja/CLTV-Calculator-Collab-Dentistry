@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CLTV Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <img src="https://pbs.twimg.com/profile_images/1678814048253509645/jrue-Bso_400x400.jpg" alt="Logo" class="logo">
+
+        <h2>Customer Lifetime Value Calculator</h2>
+        <label for="averageRevenue">Average Revenue Per Appointment ($):</label>
+        <input type="number" id="averageRevenue" placeholder="Enter revenue per appointment">
+
+        <label for="appointmentsPerYear">Average Number of Appointments Per Year:</label>
+        <input type="number" id="appointmentsPerYear" placeholder="Enter appointments per year">
+
+        <label for="years">Average Number of Years Each Client Will Stay:</label>
+        <input type="number" id="years" placeholder="Enter average years">
+
+        <button onclick="calculateCLTV()">Calculate CLTV</button>
+
+        <div id="result">Customer Lifetime Value: $0.00</div>
+
+        <table class="tips-table">
+            <tr>
+                <th colspan="2">Tips to Increase Customer Lifetime Value</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Increase your client's per appointment spend by offering other services.</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Increase the frequency that clients visit by being proactive about scheduling next appointments.</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Provide great service and retain clients longer than the average practice.</td>
+            </tr>
+            <tr>
+                <td colspan="2">The Most Successful Practices Do All Three!</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
